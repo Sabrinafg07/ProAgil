@@ -4,7 +4,6 @@ C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\bin\Debug\netcoreapp2.2\P
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\bin\Debug\netcoreapp2.2\ProAgil.API.dll
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\bin\Debug\netcoreapp2.2\ProAgil.API.pdb
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\obj\Debug\netcoreapp2.2\ProAgil.API.csprojAssemblyReference.cache
-C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\obj\Debug\netcoreapp2.2\ProAgil.API.csproj.CoreCompileInputs.cache
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\obj\Debug\netcoreapp2.2\ProAgil.API.RazorAssemblyInfo.cache
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\obj\Debug\netcoreapp2.2\ProAgil.API.RazorAssemblyInfo.cs
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\obj\Debug\netcoreapp2.2\ProAgil.API.AssemblyInfoInputs.cache
@@ -12,3 +11,9 @@ C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\obj\Debug\netcoreapp2.2\P
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\obj\Debug\netcoreapp2.2\ProAgil.API.RazorTargetAssemblyInfo.cache
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\obj\Debug\netcoreapp2.2\ProAgil.API.dll
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\obj\Debug\netcoreapp2.2\ProAgil.API.pdb
+C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\bin\Debug\netcoreapp2.2\ProAgil.Domain.dll
+C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\bin\Debug\netcoreapp2.2\ProAgil.Repository.dll
+C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\bin\Debug\netcoreapp2.2\ProAgil.Domain.pdb
+C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\bin\Debug\netcoreapp2.2\ProAgil.Repository.pdb
+C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\obj\Debug\netcoreapp2.2\ProAgil.API.csproj.CopyComplete
+C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.API\obj\Debug\netcoreapp2.2\ProAgil.API.csproj.CoreCompileInputs.cache

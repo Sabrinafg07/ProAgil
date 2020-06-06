@@ -29,7 +29,14 @@
         },
         "frameworks": {
           "netcoreapp2.2": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj": {
+                "projectPath": "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj"
+              },
+              "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Repository\\ProAgil.Repository.csproj": {
+                "projectPath": "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Repository\\ProAgil.Repository.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -60,6 +67,122 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj",
+        "projectName": "ProAgil.Domain",
+        "projectPath": "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj",
+        "packagesPath": "C:\\Users\\Cleber Bettini\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cleber Bettini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Repository\\ProAgil.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Repository\\ProAgil.Repository.csproj",
+        "projectName": "ProAgil.Repository",
+        "projectPath": "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Repository\\ProAgil.Repository.csproj",
+        "packagesPath": "C:\\Users\\Cleber Bettini\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cleber Bettini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj": {
+                "projectPath": "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
               "autoReferenced": true
             }
           },
