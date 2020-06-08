@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -82,8 +83,8 @@ namespace ProAgil.API.Controllers
             return BadRequest();
         }
         
-        [HttpPut]
-        public async Task<IActionResult> Put(int EventoId,Evento model)
+        [HttpPut("{EventoId}")]
+        public async Task<IActionResult> Put(int EventoId, Evento model)
         {
             try
             {
@@ -104,7 +105,7 @@ namespace ProAgil.API.Controllers
             return BadRequest();
         }
 
-        [HttpDelete]
+        [HttpDelete("{EventoId}")]
         public async Task<IActionResult> Delete(int EventoId)
         {
             try
@@ -114,14 +115,13 @@ namespace ProAgil.API.Controllers
 
                 _repo.Delete(evento);
 
-                if(await _repo.SaveChangesAsync()
-                )
-                return Ok();
+                if(await _repo.SaveChangesAsync())
+                    return Ok();
             }
-            catch (System.Exception)
+            catch (System.Exception ex)
             {
                 
-                return this.StatusCode(StatusCodes.Status500InternalServerError, "Ooops!! Banco de Dados falhou");
+                return this.StatusCode(StatusCodes.Status500InternalServerError, $"Ooops!! Banco de Dados falhou - {ex.Message}, {ex.StackTrace}");
             }
             return BadRequest();
         }
