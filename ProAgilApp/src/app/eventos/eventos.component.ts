@@ -4,7 +4,7 @@ import { Evento } from '../_models/Evento';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { defineLocale, BsLocaleService, ptBrLocale } from 'ngx-bootstrap';
-import { templateJitUrl } from '@angular/compiler';
+import { ToastrService } from 'ngx-toastr';
 defineLocale('pt-br', ptBrLocale);
 
 
@@ -14,23 +14,35 @@ defineLocale('pt-br', ptBrLocale);
   styleUrls: ['./eventos.component.css']
 })
 export class EventosComponent implements OnInit {
+
+  title = 'Eventos';
+
   eventosFiltrados: Evento[];
   eventos: Evento[];
   modoSalvar = 'post';
+  dataEvento: string;
   evento: Evento;
   imagemLargura = 50;
   imagemMargem = 2;
   mostrarImagem = false;
   registerForm: FormGroup;
   bodyDeletarEvento = '';
+  previewImage: any;
 
-   _filtroLista = '';
+  _filtroLista = '';
+
+  file: File;
+  fileNameToUpdate: string;
+
+  dataAtual: string;
+
 
    constructor(
     private eventoService: EventoService,
     private modalService: BsModalService,
     private fb: FormBuilder,
-    private localeService: BsLocaleService
+    private localeService: BsLocaleService,
+    private toastr: ToastrService
     ) {
       this.localeService.use('pt-br');
     }
@@ -46,13 +58,32 @@ export class EventosComponent implements OnInit {
   editarEvento(evento: Evento, template: any) {
     this.modoSalvar = 'put';
     this.openModal(template);
-    this.evento = evento;
-    this.registerForm.patchValue(evento);
+    this.evento = Object.assign({}, evento);
+    this.evento.imagemURL = '';
+    this.registerForm.patchValue(this.evento);
   }
 
   novoEvento(template: any) {
     this.modoSalvar = 'post';
     this.openModal(template);
+  }
+
+  excluirEvento(evento: Evento, template: any) {
+    this.openModal(template);
+    this.evento = evento;
+    this.bodyDeletarEvento = `Tem certeza que deseja excluir o Evento: ${evento.tema}, Código: ${evento.id}`;
+  }
+
+  confirmeDelete(template: any) {
+    this.eventoService.deleteEvento(this.evento.id).subscribe(
+      () => {
+          template.hide();
+          this.getEventos();
+          this.toastr.success('Deletado com sucesso!');
+        }, error => {
+          this.toastr.error(`Erro ao deletar ${error}`);
+        }
+    );
   }
 
   openModal( template: any) {
@@ -86,58 +117,80 @@ export class EventosComponent implements OnInit {
         email: ['', [Validators.required, Validators.email]]
       });
     }
+
+    onFileChange(event){
+      const reader = new FileReader();
+      if (event.target.files && event.target.files.length) {
+        this.file = event.target.files;
+      }
+
+    }
+
+    uploadImagem() {
+      if (this.modoSalvar === 'post') {
+        const nomeArquivo = this.evento.imagemURL.split('\\', 3);
+        this.evento.imagemURL = nomeArquivo[2];
+  
+        this.eventoService.postUpload(this.file, nomeArquivo[2])
+          .subscribe(
+            () => {
+              this.dataAtual = new Date().getMilliseconds().toString();
+              this.getEventos();
+            }
+          );
+      } else {
+        this.evento.imagemURL = this.fileNameToUpdate;
+        this.eventoService.postUpload(this.file, this.fileNameToUpdate)
+          .subscribe(
+            () => {
+              this.dataAtual = new Date().getMilliseconds().toString();
+              this.getEventos();
+            }
+          );
+      }
+    }
+
     salvarAlteracao(template: any) {
       if (this.registerForm.valid) {
-        if (this.modoSalvar === 'post'){
+        if (this.modoSalvar === 'post') {
           this.evento = Object.assign({}, this.registerForm.value);
+          this.uploadImagem();
           this.eventoService.postEvento(this.evento).subscribe(
             (novoEvento: Evento) => {
-              console.log(novoEvento);
               template.hide();
               this.getEventos();
+              this.toastr.success('Inserido com Sucesso!');
             }, error => {
-              console.log(error);
+              this.toastr.error(`Erro ao Inserir: ${error}`);
             }
           );
         } else {
-          this.evento = Object.assign({id: this.evento.id}, this.registerForm.value);
+          this.evento = Object.assign({ id: this.evento.id }, this.registerForm.value);
+
+          this.uploadImagem();
+
           this.eventoService.putEvento(this.evento).subscribe(
             () => {
               template.hide();
               this.getEventos();
+              this.toastr.success('Editado com Sucesso!');
             }, error => {
-              console.log(error);
-          }
-        );
+              this.toastr.error(`Erro ao Editar: ${error}`);
+            }
+          );
         }
       }
     }
 
-    excluirEvento(evento: Evento, template: any) {
-      this.openModal(template);
-      this.evento = evento;
-      this.bodyDeletarEvento = `Tem certeza que deseja excluir o Evento: ${evento.tema}, Código: ${evento.id}`;
-    }
 
-    confirmeDelete(template: any) {
-      this.eventoService.deleteEvento(this.evento.id).subscribe(
-        () => {
-            template.hide();
-            this.getEventos();
-          }, error => {
-            console.log(error);
-          }
-      );
+    getEventos() {
+      this.eventoService.getAllEvento().subscribe(
+        (_eventos: Evento[]) => {
+          this.eventos = _eventos;
+          this.eventosFiltrados = this.eventos;
+          console.log(this.eventos);
+        }, error => {
+          this.toastr.error(`Erro ao tentar Carregar eventos: ${error}`);
+        });
     }
-
-  getEventos() {
-    this.eventoService.getAllEvento().subscribe(
-      (_eventos: Evento[]) => {
-      this.eventos = _eventos;
-      this.eventosFiltrados = this.eventos;
-      console.log(_eventos);
-    }, error => {
-       console.log(error);
-    });
-  }
 }
