@@ -10,3 +10,15 @@ C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.Repository\obj\Debug\netstand
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.Repository\obj\Debug\netstandard2.0\ProAgil.Repository.dll
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.Repository\obj\Debug\netstandard2.0\ProAgil.Repository.pdb
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.Repository\obj\Debug\netstandard2.0\ProAgil.Repository.csproj.CoreCompileInputs.cache
+E:\Sabrina\DOTNETCORE\ProAgil.Repository\bin\Debug\netstandard2.0\ProAgil.Repository.deps.json
+E:\Sabrina\DOTNETCORE\ProAgil.Repository\bin\Debug\netstandard2.0\ProAgil.Repository.dll
+E:\Sabrina\DOTNETCORE\ProAgil.Repository\bin\Debug\netstandard2.0\ProAgil.Repository.pdb
+E:\Sabrina\DOTNETCORE\ProAgil.Repository\bin\Debug\netstandard2.0\ProAgil.Domain.dll
+E:\Sabrina\DOTNETCORE\ProAgil.Repository\bin\Debug\netstandard2.0\ProAgil.Domain.pdb
+E:\Sabrina\DOTNETCORE\ProAgil.Repository\obj\Debug\netstandard2.0\ProAgil.Repository.csprojAssemblyReference.cache
+E:\Sabrina\DOTNETCORE\ProAgil.Repository\obj\Debug\netstandard2.0\ProAgil.Repository.csproj.CoreCompileInputs.cache
+E:\Sabrina\DOTNETCORE\ProAgil.Repository\obj\Debug\netstandard2.0\ProAgil.Repository.AssemblyInfoInputs.cache
+E:\Sabrina\DOTNETCORE\ProAgil.Repository\obj\Debug\netstandard2.0\ProAgil.Repository.AssemblyInfo.cs
+E:\Sabrina\DOTNETCORE\ProAgil.Repository\obj\Debug\netstandard2.0\ProAgil.Repository.csproj.CopyComplete
+E:\Sabrina\DOTNETCORE\ProAgil.Repository\obj\Debug\netstandard2.0\ProAgil.Repository.dll
+E:\Sabrina\DOTNETCORE\ProAgil.Repository\obj\Debug\netstandard2.0\ProAgil.Repository.pdb

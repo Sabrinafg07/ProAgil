@@ -1,30 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj": {}
+    "E:\\Sabrina\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj": {
+    "E:\\Sabrina\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj",
+        "projectUniqueName": "E:\\Sabrina\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj",
         "projectName": "ProAgil.Domain",
-        "projectPath": "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj",
-        "packagesPath": "C:\\Users\\Cleber Bettini\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cleber Bettini\\Desktop\\DOTNETCORE\\ProAgil.Domain\\obj\\",
+        "projectPath": "E:\\Sabrina\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj",
+        "packagesPath": "C:\\Users\\Bettini Family\\.nuget\\packages\\",
+        "outputPath": "E:\\Sabrina\\DOTNETCORE\\ProAgil.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Cleber Bettini\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Bettini Family\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,6 +39,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

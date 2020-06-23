@@ -7,3 +7,12 @@ C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.Domain\obj\Debug\netstandard2
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.dll
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.pdb
 C:\Users\Cleber Bettini\Desktop\DOTNETCORE\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.csproj.CoreCompileInputs.cache
+E:\Sabrina\DOTNETCORE\ProAgil.Domain\bin\Debug\netstandard2.0\ProAgil.Domain.deps.json
+E:\Sabrina\DOTNETCORE\ProAgil.Domain\bin\Debug\netstandard2.0\ProAgil.Domain.dll
+E:\Sabrina\DOTNETCORE\ProAgil.Domain\bin\Debug\netstandard2.0\ProAgil.Domain.pdb
+E:\Sabrina\DOTNETCORE\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.csprojAssemblyReference.cache
+E:\Sabrina\DOTNETCORE\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.csproj.CoreCompileInputs.cache
+E:\Sabrina\DOTNETCORE\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.AssemblyInfoInputs.cache
+E:\Sabrina\DOTNETCORE\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.AssemblyInfo.cs
+E:\Sabrina\DOTNETCORE\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.dll
+E:\Sabrina\DOTNETCORE\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.pdb
