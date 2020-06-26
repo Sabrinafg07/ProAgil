@@ -41,7 +41,7 @@ namespace ProAgil.API
         {
             services.AddDbContext<ProAgilContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
            
-           IdentityBuilder builder = services.AddIdentityCore<User>(options => 
+            IdentityBuilder builder = services.AddIdentityCore<User>(options => 
             {
                 options.Password.RequireDigit = false; 
                 options.Password.RequireNonAlphanumeric = false; 
