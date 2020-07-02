@@ -3632,27 +3632,32 @@
   },
   "packageFolders": {
     "C:\\Users\\Bettini Family\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\Sabrina\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj",
+      "projectUniqueName": "E:\\Sabrina\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj",
       "projectName": "ProAgil.Domain",
-      "projectPath": "e:\\Sabrina\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj",
+      "projectPath": "E:\\Sabrina\\DOTNETCORE\\ProAgil.Domain\\ProAgil.Domain.csproj",
       "packagesPath": "C:\\Users\\Bettini Family\\.nuget\\packages\\",
-      "outputPath": "e:\\Sabrina\\DOTNETCORE\\ProAgil.Domain\\obj\\",
+      "outputPath": "E:\\Sabrina\\DOTNETCORE\\ProAgil.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Bettini Family\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Bettini Family\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -16,7 +16,7 @@ using ProAgil.API.Dto;
 using ProAgil.Domain.Identity;
 
 
-namespace ProAgil.WebAPI.Controllers
+namespace ProAgil.API.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
@@ -38,7 +38,7 @@ namespace ProAgil.WebAPI.Controllers
       _userManager = userManager;
     }
 
-     [HttpGet("GetUser")]
+    [HttpGet("GetUser")]
     public async Task<IActionResult> GetUser()
     {
         return Ok(new UserDto());
@@ -69,8 +69,8 @@ namespace ProAgil.WebAPI.Controllers
         }
     }
 
-[HttpPost("Login")]
-[AllowAnonymous]
+    [HttpPost("Login")]
+    [AllowAnonymous]
     public async Task<IActionResult> Login(UserLoginDto userLogin)
     {
         try
@@ -100,8 +100,8 @@ namespace ProAgil.WebAPI.Controllers
         }
     }
 
-        private async Task<string> GenerateJWToken(User user) 
-        {
+    private async Task<string> GenerateJWToken(User user)
+    {
         var claims = new List<Claim>
         {
             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
@@ -135,5 +135,3 @@ namespace ProAgil.WebAPI.Controllers
     }
   }
 }
-
-    
